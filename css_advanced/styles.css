@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+} */
+
+/* Header Styles */
+header {
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.header-hero {
+    background-image: url('./img/Object.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Nav styling */
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-section ul li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* First Scetion styling */
+.first-section,
+.sub-one {
+    /* color:#ebeff3; */
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.first-section .sub-one {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+}
+
+.first-section .sub-one .first-text {
+    font-size: 70px;
+}
+
+.first-section .sub-one .second-text {
+    display: flex;
+    gap: 8rem;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: rgb(190, 91, 190);
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 2rem;
+}
+
+.first-section .sub-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.first-section  .sub-two  .learn-from{
+  font-size: large;
+  margin-top:10rem;
+  text-align: center;
+}
+
+.first-section  .sub-two  .learn{
+    color: rgb(190, 91, 190); 
+}
+
+.first-section  .sub-two .sub-two-sub {
+    display: flex;
+    max-width: 200px;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+.sub-two-sub img{
+    border-radius: 80px;
+}
+.sub-two-sub .name{
+    font-weight: bold;
+}
+
+
+/* Testimonial */
+.testimonial{
+    display: flex;
+    gap: 3rem;
+    background-color: rgb(145, 75, 211);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.testimonial img{
+    border-radius: 50px;
+}
+
+.testimonial blockquote{
+    max-width: 60%;
+}
+
+.testimonial .author{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* Tutorials */
+.tutorials {
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .tutorials h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .popular {
+    color: #a148c2; 
+  }
+  
+  .tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .tutorial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  } 
+    
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image1 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .image2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .tutorial h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .tutorial p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .author {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 15px 0;
+  }
+  
+  .author img.image3 {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  
+   .rating span {
+    font-size: 12px;
+    color: #999;
+  }
+  
+/* Hero Section Styles */
+/* .hero {
+    background-image: url('/api/placeholder/1920/1080');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.categories {
+    margin-bottom: 2rem;
+}
+
+.categories span {
+    margin: 0 1rem;
+}
+
+.cta-button {
+    background-color: #C271FF;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.learn-from {
+    margin-top: 5rem;
+    color: #C271FF;
+}
+
+.pros {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pro {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.pro img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+} */
+
+/* Testimonial Section Styles */
+/* .testimonial {
+    background-color: #C271FF;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+blockquote {
+    font-style: italic;
+    max-width: 60%;
+    margin: 2rem auto;
+} */
+
+/* Tutorials Section Styles */
+/* .tutorials {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.tutorial {
+    background-color: #ffffff;
+    color: #071629;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tutorial img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.tutorial h3 {
+    padding: 1rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 1rem;
+} */
+
+/* Membership Section Styles */
+.membership {
+    background-color: #071629;
+    padding: 5rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.membership-item img {
+    width: 50px;
+    height: 50px;
+}
+
+/* FAQ Section Styles */
+.faq {
+    padding: 5rem 0;
+    background-color: #ffffff;
+    color: #081f3d;
+}
+.faq .title{
+    text-align: center;
+    font-size: 20px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding: 2rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #071629;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.footer .social_media{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+footer i{
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .first-section {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .pros {
+        flex-direction: column;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
